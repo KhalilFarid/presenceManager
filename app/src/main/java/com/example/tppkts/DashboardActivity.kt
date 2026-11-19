@@ -31,6 +31,8 @@ class DashboardActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        findViewById<android.view.View>(R.id.cardGroupes).setOnClickListener{
+            startActivity(Intent(this, GroupesActivity::class.java))}
         val cardGroupes = findViewById<View>(R.id.cardGroupes)
         val cardAppel = findViewById<View>(R.id.cardAppel)
         val cardHistorique = findViewById<View>(R.id.cardHistorique)
